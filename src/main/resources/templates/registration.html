@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/style/cssandjs/style.css" rel="stylesheet" />
+    <title>ATHENA</title>
+</head>
+<body>
+<div class="form_authorization">
+    <h1>Anmeldung</h1>
+    <form class="form_autho" action="/registration" method="post">
+        <input type="text" name="username" placeholder="Nutzername">
+        <input type="password" name="password" placeholder="Kennwort">
+        <input type="submit" value="Einloggen">
+    </form>
+    <h3>Haben Sie bereits ein Konto?</h3>
+    <a href="/login">
+        <h4>Genehmigung</h4>
+    </a>
+</div>
+</body>
+</html>

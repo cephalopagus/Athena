@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  <!--Ссылка на иконки-->
+  <link th:href="@{/style/cssandjs/style.css}" rel="stylesheet" />
+
+  <title>ATHENA</title>
+</head>
+<body>
+<div class="container">
+  <aside>
+    <div class="top">
+      <div class="logo">
+        <img src="images/logo.png" alt="" >
+        <h2>ATHENA</h2>
+      </div>
+      <div class="close" id="close-btn">
+        <span class="material-symbols-outlined">close</span>
+      </div>
+    </div>
+    <div class="sidebar">
+      <a href="index_main.html" class="active">
+        <span class="material-symbols-outlined">dashboard</span>
+        <h3>Hauptseite</h3>
+      </a>
+      <a href="index_it_science.html">
+        <span class="material-symbols-outlined">local_shipping</span>
+        <h3>Lieferung</h3>
+      </a>
+
+      <a href="index_gallery.html">
+        <span class="material-symbols-outlined">location_away</span>
+        <h3>Ausrüstung</h3>
+      </a>
+      <a href="index_faq.html">
+
+        <span class="material-symbols-outlined">quiz</span>
+        <h3>FAQ</h3>
+      </a>
+      <form th:action="@{/logout}" method="post">
+
+          <span class="material-symbols-outlined">logout</span>
+          <input type="submit" value="Ausloggen"/>
+
+      </form>
+
+
+    </div>
+  </aside>
+</div>
+</body>
+</html>
